@@ -24,12 +24,10 @@ const posts = require("./routes/posts/index");
 const path = require("path");
 if (process.env.NODE_ENV === "production") {
   // Static folder
-  app.use(express.static(path.resolve(__dirname, "../vuejs/dist/index.html")));
+  app.use(express.static(__dirname + "/public/"));
 
   // Handle SPA
-  app.get(/.*/, (req, res) =>
-    res.sendFile(path.resolve(__dirname, "../vuejs/dist/index.html"))
-  );
+  app.get(/.*/, (req, res) => res.sendFile(__dirname + "/public/index.html"));
 }
 
 const port = process.env.PORT || 5000;
