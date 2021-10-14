@@ -9,4 +9,15 @@ module.exports = {
       },
     },
   },
+  css: {
+    loaderOptions: {
+      scss: {
+        prependData: `
+        @import "@/style/variable.scss";
+        @import "@/style/mixin.scss";
+        @import "@/style/function.scss";
+        `,
+      },
+    },
+  },
 };
