@@ -24,9 +24,15 @@
                 <p>Joined at 10th September, 2021</p>
             </div>
         </div>
-        <div class="">
-            <div></div>
-            <div></div>
+        <div class="route">
+            <div>
+                <font-awesome-icon icon="list" />
+                <span>Profife</span>
+            </div>
+            <div>
+                <font-awesome-icon icon="wrench" />
+                <span>Setting</span>
+            </div>
         </div>
     </div>
 </template>
@@ -34,6 +40,7 @@
 <style scoped lang="scss">
 .profile-card{
     width:100%;
+    border: 1px solid $dim-gray;
 }
 .profile{
     &__wrapper{
@@ -65,7 +72,17 @@
             object-fit: cover;
         }
     }
-
+}
+.route{
+    display: flex;
+    justify-content:center;
+    gap: 3rem;
+    padding: 2rem;
+    & div {
+        display: flex;
+        justify-content:center;
+        gap: 1rem;
+    }
 }
 </style>
 
