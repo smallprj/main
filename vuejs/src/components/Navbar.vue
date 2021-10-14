@@ -3,18 +3,18 @@
         <div class='nav__left'>
             <span>Instructables picture</span>
             <div>
-                <input type="Seach">
+                <input class='nav__search' type="Seach" placeholder="Search...">
             </div>
         </div>
         <div class='nav__right'>
             <div>
-                <button>Log In</button>
-                <button>Register</button>
+                <button class="nav__btn nav__btn--yellow">Log In</button>
+                <button class="nav__btn nav__btn--blue">Register</button>
             </div>
             <div>
-                <a href="#">Home</a>
-                <a href="#">Category</a>
-                <a href="#">About</a>
+                <router-link class="nav__link" to="#">Home</router-link>
+                <router-link class="nav__link" to="#">Category</router-link>
+                <router-link class="nav__link" to="#">About</router-link>
             </div>
         </div>
     </div>
@@ -27,19 +27,57 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .nav{
+    background-color: $dim-gray;
     width:100%;
+    height: 60px;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    &__left{
+    align-items:center;
+    padding: 0 2rem;
+    box-sizing:border-box;
+    position: fixed;
+    &__left {
         display: flex;
         flex-direction:row;
+        align-items:center;
     }
-    &__right{
+    &__right {
         display: flex;
         flex-direction:row;
+        align-items:center;
+    }
+    &__search {
+        height: 35px;
+        background-color: #DBD7D7;
+        outline: none;
+        border-radius: 1.5rem;
+        border:0;
+        padding: 0 1rem;
+        margin: 0 1rem;
+        font-size: 1rem;
+    }
+    &__btn {
+        border:0;
+        border-radius:0.5rem;
+        border:0;
+        padding:0.5rem 1rem;
+        font-weight: 600;
+        color:$black;
+        margin: 0 1rem;
+        &--yellow {
+            background-color:$yellow-pastel;
+        }
+        &--blue {
+            background-color:$blue-pastel;
+        }
+    }
+    &__link {
+        text-decoration:none;
+        color:$black;
+        margin: 0 0.8rem;
     }
 }
 </style>
