@@ -1,5 +1,5 @@
 <template>
-    <Footer />
+    <ProfileCard />
 </template>
 
 <script>
@@ -10,6 +10,7 @@ import BlogCard from '@/components/BlogCard.vue'
 import CategoryCards from '@/components/CategoryCards.vue'
 import Footer from '@/components/Footer.vue'
 import CustomButton from '@/components/CustomButton.vue'
+import ProfileCard from '@/components/ProfileCard.vue'
 
 export default {
   name: 'Test',
@@ -19,7 +20,8 @@ export default {
     BlogCard,
     CategoryCards,
     Footer,
-    CustomButton
+    CustomButton,
+    ProfileCard
     }
 }
 </script>
