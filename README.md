@@ -1,2 +1,3 @@
-Develop Branch: 
-This branch has 2 sub-branch: backend, frontend
+#Instructable.com Mock
+
+This is a project used mainly for learning.
