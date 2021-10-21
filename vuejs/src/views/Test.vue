@@ -1,5 +1,5 @@
 <template>
-    <CKEditorComponent />
+    <login-card />
 </template>
 
 <script>
@@ -12,6 +12,7 @@ import Footer from '@/components/Footer.vue'
 import CustomButton from '@/components/CustomButton.vue'
 import ProfileCard from '@/components/ProfileCard.vue'
 import CKEditorComponent from '@/components/CKEditorComponent.vue'
+import LoginCard from '@/components/LoginCard.vue'
 
 export default {
     name: 'Test',
@@ -23,7 +24,8 @@ export default {
       Footer,
       CustomButton,
       ProfileCard,
-      CKEditorComponent
+      CKEditorComponent,
+      LoginCard
       }
 }
 </script>

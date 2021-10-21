@@ -1,10 +1,11 @@
 <template>
-    <button class='btn' 
+    <button class='btn'
+        @click.prevent="$emit('btnClicked')"
         :class="{
             'btn--green':green,
             'btn--yellow':yellow,
             'btn--blue':blue,
-            }" 
+            }"
     >
         {{ text }}
     </button>
@@ -13,14 +14,19 @@
 <script>
 export default {
   name: 'CustomButton',
+  data(){
+    return{
+      data: "ui zoi oi"
+    }
+  },
   props: {
-      text: {
-        type: String,
-        required: true
-      },
-      green: Boolean,
-      yellow: Boolean,
-      blue: Boolean
+    text: {
+      type: String,
+      required: true
+    },
+    green: Boolean,
+    yellow: Boolean,
+    blue: Boolean,
   }
 }
 </script>
