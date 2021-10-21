@@ -1,5 +1,5 @@
 <template>
-    <ProfileCard />
+    <login-card />
 </template>
 
 <script>
@@ -11,17 +11,21 @@ import CategoryCards from '@/components/CategoryCards.vue'
 import Footer from '@/components/Footer.vue'
 import CustomButton from '@/components/CustomButton.vue'
 import ProfileCard from '@/components/ProfileCard.vue'
+import CKEditorComponent from '@/components/CKEditorComponent.vue'
+import LoginCard from '@/components/LoginCard.vue'
 
 export default {
-  name: 'Test',
-  components: {
-    Navbar,
-    SlideShow,
-    BlogCard,
-    CategoryCards,
-    Footer,
-    CustomButton,
-    ProfileCard
-    }
+    name: 'Test',
+    components: {
+      Navbar,
+      SlideShow,
+      BlogCard,
+      CategoryCards,
+      Footer,
+      CustomButton,
+      ProfileCard,
+      CKEditorComponent,
+      LoginCard
+      }
 }
 </script>
