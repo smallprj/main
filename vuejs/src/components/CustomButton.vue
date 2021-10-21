@@ -5,6 +5,7 @@
             'btn--green':green,
             'btn--yellow':yellow,
             'btn--blue':blue,
+            'btn--orange':orange,
             }"
     >
         {{ text }}
@@ -27,6 +28,7 @@ export default {
     green: Boolean,
     yellow: Boolean,
     blue: Boolean,
+    orange: Boolean,
   }
 }
 </script>
@@ -37,6 +39,10 @@ export default {
     padding: 0.5em 1.2rem;
     border:0;
     border-radius: 0.5rem;
+    font-weight: 600;
+    &:hover {
+      cursor: pointer;
+    }
     &--green{
         background-color: $green-pastel;
     }
@@ -45,6 +51,9 @@ export default {
     }
     &--yellow{
         background-color: $yellow-pastel;
+    }
+    &--orange{
+        background-color: $orange-pastel;
     }
 }
 </style>
