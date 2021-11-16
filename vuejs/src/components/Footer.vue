@@ -14,7 +14,7 @@
 <script>
 import CustomButton from './CustomButton.vue'
 export default {
-  name: 'Footer',
+  name: 'CustomFooter',
   components:{
       CustomButton
   }

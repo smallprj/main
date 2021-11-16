@@ -1,23 +1,29 @@
 <template>
-  <div class="home">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link :to="{ path: 'about' }">About</router-link> |
-      <router-link :to="{ path: 'test' }">Test</router-link>
-    </div>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<navbar />
+	<slide-show />
+	<greeting />
+	<category-cards />
+
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Navbar from '@/components/Navbar.vue'
+import SlideShow from '@/components/SlideShow.vue'
+import CategoryCards from '@/components/CategoryCards.vue'
+import CustomFooter from '@/components/Footer.vue'
+import ProfileCard from '@/components/ProfileCard.vue'
+import Greeting from '@/components/Greeting.vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+    components: {
+      Navbar,
+      SlideShow,
+      CategoryCards,
+      CustomFooter,
+      ProfileCard,
+			Greeting
+      }
 }
 </script>

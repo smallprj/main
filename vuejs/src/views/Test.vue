@@ -1,5 +1,5 @@
 <template>
-    <login-card />
+    <greeting />
 </template>
 
 <script>
@@ -13,6 +13,7 @@ import CustomButton from '@/components/CustomButton.vue'
 import ProfileCard from '@/components/ProfileCard.vue'
 import CKEditorComponent from '@/components/CKEditorComponent.vue'
 import LoginCard from '@/components/LoginCard.vue'
+import Greeting from '@/components/Greeting.vue'
 
 export default {
     name: 'Test',
@@ -25,7 +26,8 @@ export default {
       CustomButton,
       ProfileCard,
       CKEditorComponent,
-      LoginCard
+      LoginCard,
+			Greeting
       }
 }
 </script>
